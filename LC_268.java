@@ -1,5 +1,5 @@
 class LC_268 {
-    public int missingNumber(int[] nums) {
+    public int brute_missingNumber(int[] nums) {
         int sum_1=0;
         int sum_2=0;
         for(int i=0;i<nums.length+1;i++){
@@ -10,5 +10,17 @@ class LC_268 {
         }
         int difference = sum_1-sum_2;
         return  difference;
+    }
+    
+    public int optimal_missingNumber(int[] nums) {
+        int n = nums.length;
+        int sum_1 = n * (n + 1) / 2;
+        int sum_2 = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            sum_2 += nums[i];
+        }
+        int difference = sum_1 - sum_2;
+        return difference;
     }
 }
