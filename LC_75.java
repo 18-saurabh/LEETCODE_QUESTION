@@ -30,7 +30,7 @@ public class LC_75 {
         int low = 0, mid = 0, high = n - 1;
 
         // Loop chalayenge jab tak mid high se chhota ya barabar hai
-        while (mid <= high) {
+        while (mid <= high){
             // Agar mid wale index par 0 hai, toh low aur mid ko swap karo
             if (nums[mid] == 0) {
                 swap(nums, low, mid); // Swap function ko call karte hain
