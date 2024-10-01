@@ -14,7 +14,7 @@ public class LC_31 {
         // Step 2: If no such element is found, reverse the whole array (smallest
         // permutation)
         if (ind == -1) {
-            reverse(0, n - 1, nums);
+            reverse(0, n - 1,nums);
             return;
         }
 
