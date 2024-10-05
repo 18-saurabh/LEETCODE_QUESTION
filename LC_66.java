@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class LC_66 {
     public int[] plusOne(int[] digits) {
         int n = digits.length;

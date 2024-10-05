@@ -31,5 +31,6 @@ public class LC_217 {
         }
         System.out.println();
         System.out.println(containsDuplicate(nums));
+        sc.close();
     }
 }

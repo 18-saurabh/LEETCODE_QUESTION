@@ -21,5 +21,6 @@ public class LC_2894{
         System.out.println("entr m");
         int m=sc.nextInt();
         System.out.println(differenceOfSums(n, m));
+        sc.close();
     }
 }

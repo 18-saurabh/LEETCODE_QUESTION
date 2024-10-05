@@ -55,6 +55,6 @@ public class LC_1814
         }
         System.out.println();
         System.out.println(countNicePairs(nums));
-        
+        sc.close();
     }
 }

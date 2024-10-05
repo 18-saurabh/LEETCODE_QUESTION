@@ -39,6 +39,7 @@ public  class LC_1281 {
         int n=sc.nextInt();
         // subtractProductandSum(n);
         subtractProductandSum(n);
+        sc.close();
     }
 
 }

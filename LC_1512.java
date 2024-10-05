@@ -24,5 +24,6 @@ public class LC_1512 {
         }
         System.out.println("Number of good pairs are");
         System.out.println(numIdenticalPairs(nums));
+        sc.close();
     }
 }

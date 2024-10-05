@@ -45,6 +45,7 @@ public class LC_202 {
         int n=sc.nextInt();
         // subtractProductandSum(n);
         System.out.println(isHappy(n));
+        sc.close();
         
     }
 }

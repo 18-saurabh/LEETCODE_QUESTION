@@ -26,6 +26,7 @@ public class LC_1480 {
             System.out.print(elements + " ");
         }
     q_1480(nums);
+    sc.close();
     }
 }
 

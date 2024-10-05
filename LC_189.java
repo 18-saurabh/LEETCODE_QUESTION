@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class LC_189 {
     public void rotate(int[] nums, int k) {
         int n = nums.length;

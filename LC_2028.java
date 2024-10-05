@@ -38,6 +38,7 @@ public class LC_2028 {
         for(int element : storage){
             System.out.println(element+" ");
         }
+        sc.close();
     }
 
 }

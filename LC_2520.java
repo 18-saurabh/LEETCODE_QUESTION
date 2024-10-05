@@ -17,6 +17,7 @@ public class LC_2520 {
         int num=sc.nextInt();
         // subtractProductandSum(n);
         System.out.println(Countdigits(num));
+        sc.close();
         
     }
 }
