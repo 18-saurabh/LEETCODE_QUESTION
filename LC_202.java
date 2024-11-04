@@ -6,13 +6,13 @@ public class LC_202 {
         int square;
         int sum = 0;
         int num;
-            while (n > 0) {
-                l_digit %= 10;
-                num = l_digit;
-                square = num * num;
-                sum += square;
-                n /= n;
-            }
+        while (n > 0) {
+            l_digit %= 10;
+            num = l_digit;
+            square = num * num;
+            sum += square;
+            n /= n;
+        }
         if (sum == 1) {
             return true;
         } else {
@@ -20,12 +20,12 @@ public class LC_202 {
         }
 
     }
-    
+
     public static boolean isHappy(int n) {
-        while (n!=1 && n!=4) {
-            n=getSumOfSquares(n);
+        while (n != 1 && n != 4) {
+            n = getSumOfSquares(n);
         }
-        return n==1;
+        return n == 1;
     }
 
     private static int getSumOfSquares(int n) {
@@ -41,12 +41,11 @@ public class LC_202 {
     }
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner (System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         // subtractProductandSum(n);
         System.out.println(isHappy(n));
         sc.close();
-        
+
     }
 }
-
