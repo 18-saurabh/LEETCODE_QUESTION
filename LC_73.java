@@ -1,4 +1,4 @@
-public class setMatrixToZero {
+public class LC_73 {
 
     // Brute Force Approach: Yeh approach rows aur columns ko directly mark karke
     // kaam karta hai
