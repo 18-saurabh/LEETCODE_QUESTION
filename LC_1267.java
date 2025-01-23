@@ -21,6 +21,5 @@ public class LC_1267 {
             }
         }
         return count;
-
     }
 }
