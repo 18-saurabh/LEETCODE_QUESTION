@@ -1,4 +1,7 @@
+import java.util.HashMap;
+import java.util.Map;
 public class LC_3160 {
+    
     public int[] countDistinctColors(int limit, int[][] queries) {
         Map<Integer, Integer> ballColorMap = new HashMap<>(); // Maps ball -> color
         Map<Integer, Integer> colorCountMap = new HashMap<>(); // Maps color -> count of balls with that color
