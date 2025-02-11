@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class LC_136 {
     public static int brute_AppearingOnes(int a[]) {
         for (int i = 0; i < a.length; i++) {
@@ -14,7 +17,25 @@ public class LC_136 {
         }
         return 0; // Return 0 if no unique element is found
     }
-   
+
+    public static int better_AppearingOnes(int a[]) {
+        int n = a.length;
+        Map<Integer, Integer> mpp = new HashMap<>();
+
+        // Populate the HashMap with values (assuming key = element, value = frequency)
+        for (int i = 0; i < n; i++) {
+            mpp.put(a[i], mpp.getOrDefault(a[i], 0) + 1);
+        }
+
+        for (int num : a) {
+            if (mpp.get(num) == 1) {
+                return num;
+            }
+        }
+        return -1;
+        
+    }
+
     public static int optimal_AppearingOnes(int nums[]) {
         int xor = 0; // Initialize a variable 'xor' to 0. This will hold the result of XOR
                      // operations.
