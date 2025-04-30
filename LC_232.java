@@ -1,7 +1,10 @@
+import java.util.Stack;
+
 class LC_232 {
     private int size;
+
     public LC_232() {
-        size=0;
+        size = 0;
     }
 
     Stack<Integer> s1 = new Stack<>();
