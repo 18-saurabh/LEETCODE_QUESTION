@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class LC_503 {
      public int[] brute_nextGreaterElements(int[] nums) {
         int n=nums.length;
@@ -11,6 +13,21 @@ public class LC_503 {
                     break;
                 }
             }
+        }
+        return nge;
+    }
+    public int[] stack_nextGreaterElements(int[] nums) {
+        int n = nums.length;
+        Stack<Integer> stack = new Stack<>();
+        int nge[] = new int[n];
+        for (int i = 2 * n - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && stack.peek() <= nums[i % n]) {
+                stack.pop();
+            }
+            if (i < n) {
+                nge[i] = stack.isEmpty() ? -1 : stack.peek();
+            }
+            stack.push(nums[i % n]);
         }
         return nge;
     }
