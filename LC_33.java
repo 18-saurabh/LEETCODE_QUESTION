@@ -12,7 +12,7 @@ public class LC_33 {
                 if (nums[low] <= target && target <= nums[mid]) {
                     high = mid - 1;
                 } else {
-                    low = mid + 1;
+                    low = mid + 1 ;
                 }
             }
             // IF right is sorted
