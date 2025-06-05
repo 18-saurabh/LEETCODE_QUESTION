@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class LC_907 {
-    public int brute_minEatingSpeedsumSubarrayMins(int[] arr) {
+    public int brute_sumSubarrayMins(int[] arr) {
         int n = arr.length;
         int sum = 0;
         int mod = (int) (1e9 + 7);
